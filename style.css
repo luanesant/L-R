@@ -185,8 +185,11 @@ footer {
   
   .names {
     font-size: 48px; 
-    padding: 0 10%; 
+    padding: 0 0%; 
     white-space: nowrap; 
+    height: 100dvh;
+    justify-content: left;
+    width: 100%; 
   }
   
   .declaration {
@@ -205,6 +208,7 @@ footer {
   }
   
   .container {
-    padding: 10% 0;
+    padding: 50% 0;
+    overflow-x: hidden; 
   }
 }
