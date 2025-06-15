@@ -172,23 +172,39 @@ footer {
     box-shadow: 0 4px 8px rgba(141, 100, 77, 0.8); 
 }
 
-@media (max-width: 769px) {
-    body{
-        background-size: 100% 100%;
-        background-position: center top;  
-        justify-content: flex-start; 
-    }
 
-    header {
-        padding: 10% 0;
-        width: 100%;
-    }
-    .dynamic-gallery {grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));}
-    .dynamic-gallery img {height: 180px;}
-    .capa {height: 60vh;}
-    .message{ font-size: 24px; padding: 20px;}
-    .charming-text {font-size: 16px; padding: 8px 16px;}
-    .flowers { font-size: 25px;}
-    .bubbles {font-size: 16px;}
-    
+@media (max-width: 769px) {
+  body {
+    overflow-x: hidden; 
+    width: 100vw;
+  }
+  
+  .capa {
+    width: 100%; 
+  }
+  
+  .names {
+    font-size: 48px; 
+    padding: 0 10%; 
+    white-space: nowrap; 
+  }
+  
+  .declaration {
+    padding: 8% 5%;
+    font-size: 24px;
+  }
+  
+  .dynamic-gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .dynamic-gallery img {
+    width: 80%; 
+    margin: 10px auto; 
+  }
+  
+  .container {
+    padding: 10% 0;
+  }
 }
